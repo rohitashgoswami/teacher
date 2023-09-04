@@ -71,30 +71,16 @@ body{
     top: 198px;
   }
 
-  .happy:hover{
-    color: #9b5de5;
-    font-size: 38px;
-  }
-  
   .toyou{
     top: 123px;
   }
   
-  .toyou:hover{
-    color: #9b5de5;
-    font-size: 30px;
-    text-shadow:  5px 0 15px #FC0;
-  }
   .tday{
     position: relative;
     font-family: arial;
     font-size: 35px;
     text-align: center;
     top: 163px;
-  }
-  .tday:hover{
-    color: #9b5de5;
-    font-size: 38px;
   }
 
   .wrap-deco{
