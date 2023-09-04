@@ -1,0 +1,202 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #00bbf9;
+  }
+  
+  .teachersdaycard{
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: .2s;
+  }
+  
+  .teachersdaycard:hover{
+    transform: perspective(2500px) rotate(5deg);
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, .15), 0 10px 100px rgba(0,0,0,0.3);
+  }
+  
+  .teachersdaycard:hover .cardFront{
+    transform: rotateY(-160deg);
+  }
+  
+  .teachersdaycard:hover .front-text{
+    display: none;
+  }
+  
+  .teachersdaycard:hover .wrap-deco{
+    display: none;
+  }
+  
+  .teachersdaycard:hover .wrap-decoTwo{
+    display: none;
+  }
+  
+  .cardFront{
+    position: relative;
+    background-color: #fff;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.13), 30px 0 50px rgba(0,0,0,0.1);
+    transition: .4s;
+  }
+  
+  .cardInside {
+    position: absolute;
+    z-index: -1;
+    background-color: #fff;
+    width: 250px;
+    height: 350px;
+    left: 0;
+    top: 0;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
+  }
+  
+  .happy, .toyou{
+    position: relative;
+    font-family: didot;
+    text-align: center;
+    backface-visibility: hidden;
+    font-size: 30px;
+  }
+  
+  .happy {
+    top: 198px;
+  }
+
+  .happy:hover{
+    color: #9b5de5;
+    font-size: 38px;
+  }
+  
+  .toyou{
+    top: 123px;
+  }
+  
+  .toyou:hover{
+    color: #9b5de5;
+    font-size: 30px;
+    text-shadow:  5px 0 15px #FC0;
+  }
+  .tday{
+    position: relative;
+    font-family: arial;
+    font-size: 35px;
+    text-align: center;
+    top: 163px;
+  }
+  .bday:hover{
+    color: #9b5de5;
+    font-size: 38px;
+  }
+
+  .wrap-deco{
+    position: absolute;
+    top: -230px;
+    left: -200px;
+  }
+
+  .decorations{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    border: 3px solid #333;
+    border-radius: 50%;
+  }
+
+  .decorations:before, .decorations:after, .decorationsTwo:before, .decorationsTwo:after, .decorationsThree:before, .decorationsThree:after {
+    content: "";
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    width: 0;
+    height: 0; 
+  }
+
+  .decorations:before{
+    border-top: 40px solid #f15bb5;
+    top: 297px;
+    left: 210px;
+    transform: rotate(-5deg);
+  }
+  .decorations:after{
+    border-top: 40px solid #f4d35e;
+    top: 288px;
+    left: 260px;
+    transform: rotate(-17deg);
+  }
+  
+  .decorationsTwo:before{
+    border-top: 40px solid #00f5d4;
+    top: 268px;
+    left: 315px;
+    transform: rotate(-30deg);
+  }
+  .decorationsTwo:after{
+    border-top: 40px solid #9b5de5;
+    top: 238px;
+    left: 355px;
+    transform: rotate(-40deg);
+  }
+
+  .wrap-decoTwo{
+    top: -230px;
+    left: 445px;
+    position: absolute;
+    transform: scaleX(-1);
+  }
+
+  .decorationsThree:before{
+    border-top: 40px solid#00bbf9;
+    top: 268px;
+    left: 315px;
+    transform: rotate(-30deg);
+  }
+
+  .decorationsThree:after{
+    border-top: 40px solid #9b5de5;
+    top: 238px;
+    left: 355px;
+    transform: rotate(-40deg);
+  }
+
+  .image{
+    position: relative;
+    bottom: 110px;
+    left: 65px;
+  }
+
+  .image img{
+    width: 50%;
+    /* height: 120px; */
+  }
+
+  .inside-text {
+      position: relative;
+      top: -160px;
+      transform: scale(0.7);
+  }
+  
+  .wishes {
+      position: relative;
+      top: -100px;
+      margin: 25px;
+  }
+  
+  p {
+      font-family: 'Brush Script MT', cursive;
+      color: #333;
+  }
+
+  .name{
+    position: absolute;
+    margin-left: 130px;
+    bottom: 30px;
+  }
